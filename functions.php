@@ -2,7 +2,8 @@
 
 function aj_theme_support(){
 	add_theme_support( 'post-thumbnails', array('project') );
-		set_post_thumbnail_size( 50, 50 );
+	set_post_thumbnail_size( 208, 135 );
+	add_image_size( 'project-grid-thumbnail', 208, 135, true );
 	add_image_size( 'single-project-thumbnail', 540, 274, true );
 }
 aj_theme_support();

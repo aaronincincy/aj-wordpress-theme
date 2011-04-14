@@ -7,7 +7,7 @@ get_header();
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="grid_7">
 					<?php if (has_post_thumbnail()){
-						the_post_thumbnail( 'single-project-thumbnail' );
+						the_post_thumbnail( 'project-grid-thumbnail' );
 					} else {
 					?>No thumbnail available...<?php
 					}
