@@ -7,6 +7,19 @@ Version: 1.10\
 */
 
 @import url(../thematic/style.css);
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('eot'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#webfontfvFLBU0N') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 
@@ -60,9 +73,6 @@ a img {
 
 /* =Layout
 -------------------------------------------------------------- */
-body{
-	background: url(images/bg.png) #f7f7f7 top repeat-x;
-}
 #primary{
 	border:none;
 }
@@ -71,7 +81,6 @@ body{
 	padding-top: 0;
 	padding-bottom: 0;
 	background:#fff;
-	border-top:3px solid orange;
 }
 #branding
 {
@@ -93,8 +102,64 @@ body{
 	width:480px;
 	float:right;
 }
-.attachment-project-grid-thumbnail
+.grid-cell
 {
-	background: url(images/photoframe_sm.png);
-	padding:13px;
+	background: center no-repeat url(images/photoframe_sm.png);
+	padding:16px;
+	float:left;
+}
+#blog-title
+{
+	text-transform:lowercase;
+	color:white;
+	font-family:BebasNeueRegular, sans-serif;
+	font-weight:normal;
+	font-size:36px;
+}
+#blog-title a
+{
+	color:white;
+}
+#header
+{
+	background-color:black;
+}
+h3
+{
+	font-family:BebasNeueRegular, sans-serif;
+	color:#ccc;
+	font-size:24px;
+	line-height:1.5em;
+	margin-left:10px;
+}
+h3 em
+{
+	font-style:normal;
+	color:#a1a1a1;
+}
+#feature
+{
+	height:300px;
+	background:#f1f1f1;
+}
+.aside h3
+{
+	font-style:normal;
+}
+#footer h3
+{
+	color:#666;
+	font-size:22px;
+}
+#footer .textwidget
+{
+	margin: 0 10px;
+}
+#footer .widgetcontainer
+{
+	background:black;
+}
+#footer 
+{
+	background-color:#202020;
 }

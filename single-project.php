@@ -18,7 +18,20 @@ get_header();
 					<?php } else { ?>
 						<h1 class="entry-title"><?php the_title(); ?></h1>
 					<?php } ?>
-
+					<div class="">
+					<ul>
+						<li><? the_terms($post->ID, 'client', 'Client: '); ?></li>
+						<li><? the_terms($post->ID, 'employer', 'Employer: '); ?></li>
+						<li><? the_terms($post->ID, 'skills', 'Skills: '); ?></li>
+						<?php $vals = get_post_custom_values('url', $post->ID);
+						foreach ($vals as $key => $value){
+						?>
+						<li><a href="<?php echo $value; ?>">Visit Site</a></li>
+						<?php
+						}
+						 ?>
+					</ul>
+					</div>
 					<div class="entry-content">
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'aaronjohnson' ), 'after' => '</div>' ) ); ?>
