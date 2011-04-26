@@ -476,9 +476,13 @@ a img {
   float: right; }
 
 .grid-cell {
-  background: center no-repeat url(images/photoframe_sm.png);
-  padding: 16px;
-  float: left; }
+  /*background: center no-repeat url(images/photoframe_sm.png);*/
+  margin:8px;
+  padding: 8px;
+  float: left; 
+  -moz-box-shadow: 8px 8px 8px #cfcfcf;
+  -webkit-box-shadow: 8px 8px 8px #cfcfcf;
+  box-shadow: 8px 8px 8px #cfcfcf; }
 
 #blog-title {
   text-transform: lowercase;
